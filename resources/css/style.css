@@ -11,13 +11,13 @@ html {
 /* header */
 .logo-animation {
   width: 100%;
-  height: 70px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   border: purple solid;
 }
 header {
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,38 +26,70 @@ header {
 
 .logo {
   position: relative;
-  width: 30%;
+  width: 20%;
   border: blue solid;
 }
 
 .logo img {
   position: absolute;
-  height: 60px;
+  height: 80px;
   width: auto;
   border: yellow solid;
 }
 
 @keyframes slide {
   0% {
-    left: 0;
-  }
-  50% {
-    left: 30%;
+    left: 0%;
   }
   100% {
-    left: 80%;
+    left: 60%;
   }
 }
+
+/*@keyframes swing {
+  15% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+   -webkit-transform: translateX(2px);
+   transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+} */
+
+
 .logo img {
   animation-name: slide;
-  animation-duration: 7s;
-  animation-timing-function: linear;
-  animation-delay: .5s;
+  animation-duration: 900ms;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
   animation-iteration-count: 6;
   animation-direction: alternate;
 }
-
-
+/*
+.logo img {
+  -webkit-animation: swing 1s ease;
+  animation: swing s ease;
+  -webkit-animation-iteration-count: 10;
+  animation-iteration-count: 10;
+  }
+  */
 
 
 
