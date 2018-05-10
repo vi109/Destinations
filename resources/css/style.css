@@ -1,4 +1,69 @@
+/* universal */
+html {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
 
+/* header */
+.logo-animation {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border: purple solid;
+}
+header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: orange solid;
+}
+
+.logo {
+  position: relative;
+  width: 30%;
+  border: blue solid;
+}
+
+.logo img {
+  position: absolute;
+  height: 60px;
+  width: auto;
+  border: yellow solid;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 30%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+.logo img {
+  animation-name: slide;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-delay: .5s;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+}
+
+
+
+
+
+
+
+/* gallery */
 .fotorama img {
   width: 500px;
   height: auto;
