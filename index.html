@@ -36,24 +36,28 @@
         <img src="./resources/images/exploding-bubble.jpg" alt="exploding bubble"/>
       </section>
 
-      <section id="thailand">
-        <h2>Thailand</h2>
-        <div class="fotorama" data-width="60%" role="presentation">
-          <img src="./resources/images/thai-one.jpg" alt="thai traditional boat"/>
-          <img src="./resources/images/thai-two.jpg" alt="elephants viewed from the back"/>
-          <img src="./resources/images/thai-three.jpg" alt="thai monk"/>
-          <img src="./resources/images/thai-four.jpg" alt="temple monkey"/>
-          <img src="./resources/images/thai-five.jpg" alt="view thai rainforest"/>
-          <img src="./resources/images/thai-seven.jpg" alt="view with boat"/>
-          <img src="./resources/images/thai-eight.jpg" alt="boat in clear blue water"/>
-          <img src="./resources/images/thai-ten.jpg" alt="temple"/>
-          <img src="./resources/images/thai-eleven.jpg" alt="bikes"/>
+      <section class="country">
+        <h2 id="thailand">Thailand</h2>
+        <div class="gallery">
+<!--      <button class="button-left" onclick="plusDivs(-1)">&#10094;</button> // manual slide-->
+          <div class="images">
+            <img class="slide" src="./resources/images/thai-one.jpg" alt="thai traditional boat"/>
+            <img class="slide" src="./resources/images/thai-two.jpg" alt="elephants viewed from the back"/>
+            <img class="slide" src="./resources/images/thai-three.jpg" alt="thai monk"/>
+            <img class="slide" src="./resources/images/thai-four.jpg" alt="temple monkey"/>
+            <img class="slide" src="./resources/images/thai-five.jpg" alt="view thai rainforest"/>
+            <img class="slide" src="./resources/images/thai-seven.jpg" alt="view with boat"/>
+            <img class="slide" src="./resources/images/thai-eight.jpg" alt="boat in clear blue water"/>
+            <img class="slide" src="./resources/images/thai-ten.jpg" alt="temple"/>
+            <img class="slide" src="./resources/images/thai-eleven.jpg" alt="bikes"/>
+          </div>
+<!--      <button class="button-right" onclick="plusDivs(+1)">&#10095;</button> // manual slide -->
         </div>
       </section>
 
       <section>
-        <h2>next country etc</h2>
-        <div class="gallery">
+        <h3>next country etc</h3>
+        <div class="">
           <img src="" alt=""/>
         </div>
       </section>
@@ -63,9 +67,44 @@
       <img src="" alt=""/>
       <span>&copy; VieVie 2018</span>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- fotorama.css & fotorama.js. -->
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+<!-- MANUAL SLIDE
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+    </script>
+  -->
+  <!-- AUTO SLIDE -->
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>

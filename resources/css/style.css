@@ -163,7 +163,23 @@ h1 {
 }
 
 /* gallery */
-.fotorama {
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 8rem 0 2.5rem 0;
+}
+
+.gallery {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  max-width: 750px;
+}
+
+.country {
+  background-color: lightGrey;
 }
