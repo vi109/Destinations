@@ -7,9 +7,11 @@
     <meta name="keywords" content="Animation, Test, Project">
     <meta name="author" content="Vi">
     <title>Destinations</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/images/favicon.ico" type="image/x-icon" rel="icon">
+
   </head>
   <body>
 
@@ -52,6 +54,28 @@
             <img class="slide" src="./resources/images/thai-eleven.jpg" alt="bikes"/>
           </div>
 <!--      <button class="button-right" onclick="plusDivs(+1)">&#10095;</button> // manual slide -->
+          <div class="images extra-box">
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-two.jpg" alt="elephants viewed from the back"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-three.jpg" alt="thai monk"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-four.jpg" alt="temple monkey"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-five.jpg" alt="view thai rainforest"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-seven.jpg" alt="view with boat"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-eight.jpg" alt="boat in clear blue water"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-ten.jpg" alt="temple"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-eleven.jpg" alt="bikes"/>
+            <img class="slide-two w3-animate-fading" src="./resources/images/thai-one.jpg" alt="thai traditional boat"/>
+          </div>
+          <div class="images extra-box">
+            <img class="slide-three" src="./resources/images/thai-three.jpg" alt="thai monk"/>
+            <img class="slide-three" src="./resources/images/thai-four.jpg" alt="temple monkey"/>
+            <img class="slide-three" src="./resources/images/thai-five.jpg" alt="view thai rainforest"/>
+            <img class="slide-three" src="./resources/images/thai-seven.jpg" alt="view with boat"/>
+            <img class="slide-three" src="./resources/images/thai-eight.jpg" alt="boat in clear blue water"/>
+            <img class="slide-three" src="./resources/images/thai-ten.jpg" alt="temple"/>
+            <img class="slide-three" src="./resources/images/thai-eleven.jpg" alt="bikes"/>
+            <img class="slide-three" src="./resources/images/thai-one.jpg" alt="thai traditional boat"/>
+            <img class="slide-three" src="./resources/images/thai-two.jpg" alt="elephants viewed from the back"/>
+          </div>
         </div>
       </section>
 
@@ -90,21 +114,6 @@
     </script>
   -->
   <!-- AUTO SLIDE -->
-    <script>
-      var slideIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("slide");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 3000); // Change image every 2 seconds
-      }
-    </script>
+    <script src="./resources/js/main.js"></script>
   </body>
 </html>
