@@ -131,26 +131,26 @@ h1 {
   font-size: 2rem;
 }
 
-/* gallery */
+/* gallery first country*/
 
 h2 {
   font-size: 2rem;
   text-align: center;
-  padding: 3rem 0;
+  padding-top: 2rem;
 }
 
 .gallery {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 2rem;
+  padding: 2rem;
 }
 
 .gallery img {
   max-width: 450px;
 }
 
-.country {
+.country-one {
   background-color: lightGrey;
 }
 
@@ -176,6 +176,11 @@ h2 {
     max-width: 100%;
   }
   .gallery {
-    margin: 0;
+    padding: 1.5rem 0;
+  }
+  h2 {
+    padding-top: 1.5rem;
   }
 }
+
+/* gallery second country */
