@@ -10,13 +10,13 @@ html {
 
 body {
   font-size: 16px;
+  background-color: black;
 }
 
 main {
   position: relative;
   top: 90px;
 }
-
 
 /* header */
 
@@ -116,7 +116,6 @@ nav a:hover {
 
 .jumbotron {
   color: #fff;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -152,6 +151,17 @@ h2 {
 
 #thailand {
   background-color: lightGrey;
+}
+
+/* Added target-thailand and unused h6 to fix anchor target, to make heading visible without adding extra top padding */
+#target-thailand {
+  position: relative;
+}
+
+h6 {
+  position: absolute;
+  left: 0px;
+  top: -90px;
 }
 
 .country-info {
