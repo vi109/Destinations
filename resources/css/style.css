@@ -84,6 +84,7 @@ header {
 		transform: rotateY(360deg);
 		}
 }
+
 .brand span {
   position: absolute;
   animation-name: rotation;
@@ -213,12 +214,12 @@ h2 {
   transition: all 600ms ease-in;
 }
 
-.country-two {
+#mauritius {
   background-color: grey;
   padding-bottom: 3rem;
 }
 
-.country-two h2 {
+#mauritius h2 {
   color: #fff;
 }
 

@@ -15,7 +15,7 @@ function carousel() {
   setTimeout(carousel, 5000); // Change image every 2 seconds
 }
 
-// Auto slide two
+// Auto slide two - fade in via W3 link html
 
 var slideIndexB = 0;
 carouselB();
