@@ -38,7 +38,7 @@ header {
   justify-content: space-between;
 }
 
-/* logo animation */
+/* logo animation SLIDE */
 
 .logo {
   position: relative;
@@ -68,7 +68,7 @@ header {
   width: auto;
 }
 
-/* Brand animation */
+/* Brand animation ROTATE */
 
 .brand {
   position: relative;
@@ -114,7 +114,6 @@ nav a:hover {
 /* Jumbotron */
 
 .jumbotron {
-
   color: #fff;
   background-color: black;
   display: flex;
@@ -131,7 +130,7 @@ h1 {
   font-size: 2rem;
 }
 
-/* gallery first country*/
+/* gallery first country AUTO SLID AND FADE IN*/
 
 h2 {
   font-size: 2rem;
@@ -150,8 +149,18 @@ h2 {
   max-width: 450px;
 }
 
-.country-one {
+#thailand {
   background-color: lightGrey;
+}
+
+.country-info {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.country-info p {
+  max-width: 450px;
 }
 
 /* Responsive */
@@ -176,11 +185,46 @@ h2 {
     max-width: 100%;
   }
   .gallery {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
   h2 {
     padding-top: 1.5rem;
   }
 }
 
-/* gallery second country */
+/* gallery second country  ZOOM */
+
+.second-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+}
+
+.second-gallery img {
+  max-width: 140px;
+  max-height: 140px;
+  margin: 0.2rem;
+}
+
+.second-gallery img:hover {
+  transform: scale(1.7);
+  transition: all 600ms ease-in;
+}
+
+.country-two {
+  background-color: grey;
+  padding-bottom: 3rem;
+}
+
+.country-two h2 {
+  color: #fff;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  top: 6rem;
+}
