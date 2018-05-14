@@ -11,6 +11,18 @@ html {
 body {
   font-size: 16px;
   background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 main {
@@ -36,15 +48,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 0.5rem;
 }
 
-/* logo animation SLIDE */
+/* logo animation Roll in */
 
 .logo {
   position: relative;
   width: 25%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 @keyframes slide {
@@ -56,16 +70,24 @@ header {
   }
 }
 
+@keyframes rotateZ {
+  from {
+    transform: rotateZ(0deg);
+    }
+  to {
+    transform: rotateZ(360deg);
+    }
+}
+
 .logo img {
-  animation-name: slide;
+  animation-name: slide, rotateZ;
   animation-duration: 800ms;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in;
   animation-iteration-count: 4;
   animation-delay: 0.5s;
   animation-direction: alternate-reverse;
   position: absolute;
-  height: 80px;
-  width: auto;
+  transform: rotateZ(30);
 }
 
 /* Brand animation ROTATE */
@@ -88,11 +110,28 @@ header {
 .brand span {
   position: absolute;
   animation-name: rotation;
-  animation-duration: 3.2s;
+  animation-duration: 3.3s;
   animation-delay: 0.5s;
   animation-timing-function: linear;
   font-size: 1.5rem;
   margin-left: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:900px) {
+  .brand span {
+    font-size: 1rem;
+  }
+  .logo img {
+    width: 40px;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
 }
 
 /* Navigation */
@@ -102,12 +141,12 @@ nav a{
   text-decoration: none;
   padding: 0.5rem 0;
   margin: 0 1rem;
-  border-top: darkGrey solid 0.5px;
+  border-top: darkGrey solid 1px;
 }
 
 nav a:hover {
-  border-top: black solid 1.5px;
-  padding-top: 0.75rem;
+  border-top: black solid 0.5px;
+  padding-top: 0.2rem;
   color: black;
   transition: all 300ms linear;
 }
@@ -153,14 +192,13 @@ h2 {
   background-color: lightGrey;
 }
 
-/* Added target-thailand and unused h6 to fix anchor target, to make heading visible without adding extra top padding */
+/* Added target-thailand and un-used h6 to fix anchor target, to make heading visible without adding extra top padding */
 #target-thailand {
   position: relative;
 }
 
 h6 {
   position: absolute;
-  left: 0px;
   top: -90px;
 }
 
