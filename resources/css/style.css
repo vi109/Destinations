@@ -188,12 +188,14 @@ h2 {
   max-width: 450px;
 }
 
-#thailand {
+.thailand {
   background-color: lightGrey;
 }
 
 /* Added target-thailand and un-used h6 to fix anchor target, to make heading visible without adding extra top padding */
-#target-thailand {
+#thailand,
+#mauritius,
+#sri-lanka {
   position: relative;
 }
 
@@ -262,13 +264,39 @@ h6 {
   transition: all 600ms ease-in;
 }
 
-#mauritius {
+.mauritius {
   background-color: grey;
   padding-bottom: 3rem;
 }
 
-#mauritius h2 {
+.mauritius h2 {
   color: #fff;
+}
+
+/* third country - css grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  background-color: black;
+  justify-content: center;
+  grid-gap: 10px;
+  margin: 2rem;
+}
+
+.grid-item {
+  width: 200px;
+  height: 200px;
+}
+
+.grid img {
+  height: 200px;
+  width: 200px;
+}
+
+.sri-lanka h2,
+.sri-lanka p {
+  color: lightGrey;
 }
 
 /* Footer */
