@@ -133,6 +133,17 @@ header {
     font-size: 0.8rem;
   }
 }
+@media only screen and (max-width:700px) {
+  .brand span {
+    animation: none;
+  }
+  .logo {
+    width: 15%;
+  }
+  .brand-nav {
+    width: 85%;
+  }
+}
 
 /* Navigation */
 
@@ -165,7 +176,7 @@ nav a:hover {
 }
 
 h1 {
-  margin: 0 auto;
+  margin: 2rem;
   font-size: 2rem;
 }
 
@@ -260,8 +271,8 @@ h6 {
 }
 
 .second-gallery img:hover {
-  transform: scale(1.7);
   transition: all 600ms ease-in;
+  transform: scale(1.7);
 }
 
 .mauritius {
@@ -273,25 +284,46 @@ h6 {
   color: #fff;
 }
 
+@media only screen and (max-width:1060px) {
+  .second-gallery {
+    margin: 3rem 6rem;
+  }
+}
+
+@media only screen and (max-width:924px) {
+  .second-gallery {
+    margin: 3rem 2rem;
+  }
+}
+
 /* third country - css grid */
+.text-aside {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
 
 .grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-columns: 100px 100px 100px 100px 100px;
   background-color: black;
   justify-content: center;
-  grid-gap: 10px;
   margin: 2rem;
 }
 
 .grid-item {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .grid img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+}
+
+.grid img:hover {
+  transform: scale(2);
+  transition: all 200ms ease-in;
 }
 
 .sri-lanka h2,
@@ -299,9 +331,40 @@ h6 {
   color: lightGrey;
 }
 
+@media only screen and (max-width: 1130px) {
+  .text-aside {
+    display: block;
+  }
+  .second-gallery {
+    margin: 3rem 10rem;
+  }
+}
+
+
 /* Footer */
 
 footer {
   position: relative;
   top: 6rem;
+  background-color: lightGrey;
+  height: 150px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.25rem;
+}
+
+footer span {
+  margin: 0 0.25rem;
+}
+
+.credentials {
+  display: flex;
+  align-items: center;
 }
