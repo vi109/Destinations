@@ -165,8 +165,8 @@ header {
   .logo img {
     width: 30px;
   }
-  h1 {
-    padding-left: 1rem;
+  .jumbotron {
+    margin-left: 2rem;
   }
   h6 {
     top: -40px;
@@ -176,6 +176,9 @@ header {
   #sri-lanka {
     position: absolute;
     top: -40px;
+  }
+  .jumbotron img {
+    max-width: 40%;
   }
 }
 
