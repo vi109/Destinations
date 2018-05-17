@@ -49,6 +49,16 @@ function carouselC() {
   setTimeout(carouselC, 5000); // Change image every 2 seconds
 }
 
+// Mobile Navigation
+function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
 /* MANUAL SLIDE
 
       var slideIndex = 1;

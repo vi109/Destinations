@@ -129,10 +129,11 @@ header {
   .logo img {
     width: 40px;
   }
-  nav a {
+  .nav-desktop a {
     font-size: 0.8rem;
   }
 }
+
 @media only screen and (max-width:700px) {
   .brand span {
     animation: none;
@@ -147,7 +148,11 @@ header {
 
 /* Navigation */
 
-nav a{
+.nav-mobile {
+  display: none;
+}
+
+.nav-desktop a{
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 0;
@@ -155,7 +160,7 @@ nav a{
   border-top: darkGrey solid 1px;
 }
 
-nav a:hover {
+.nav-desktop a:hover {
   border-top: black solid 0.5px;
   padding-top: 0.2rem;
   color: black;
@@ -251,6 +256,10 @@ h6 {
   }
   h2 {
     padding-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
 
@@ -284,18 +293,39 @@ h6 {
   color: #fff;
 }
 
-@media only screen and (max-width:1060px) {
-  .second-gallery {
-    margin: 3rem 6rem;
+@media only screen and (max-width:1051px) {
+  .tablet {
+    display: none;
+  }
+}
+@media only screen and (max-width:905px) {
+  .tabletL {
+    display: none;
   }
 }
 
-@media only screen and (max-width:924px) {
+@media only screen and (max-width:759px) {
+  .second-gallery img {
+    max-width: 100px;
+    max-height: 100px;
+  }
   .second-gallery {
-    margin: 3rem 2rem;
+    flex-wrap: nowrap;
   }
 }
-
+@media only screen and (max-width:720px) {
+  .second-gallery img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .second-gallery {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .country-info {
+    padding: 1rem;
+  }
+}
 /* third country - css grid */
 .text-aside {
   display: flex;
@@ -337,6 +367,24 @@ h6 {
   }
   .second-gallery {
     margin: 3rem 10rem;
+  }
+}
+@media only screen and (max-width: 633px) {
+  .grid {
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    margin: 1rem;
+  }
+  .grid-item,
+  .grid img {
+    height: 50px;
+    width: 50px
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+    margin-right: 4rem;
   }
 }
 
