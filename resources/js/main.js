@@ -50,6 +50,7 @@ function carouselC() {
 }
 
 // Mobile Navigation
+
 function myFunction() {
     var x = document.getElementById("Demo");
     if (x.className.indexOf("w3-show") == -1) {
