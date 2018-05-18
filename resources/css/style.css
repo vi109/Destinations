@@ -32,6 +32,11 @@ main {
   top: 90px;
 }
 
+p,
+h2 {
+  color: lightGrey;
+}
+
 /* header */
 
 header {
@@ -39,7 +44,7 @@ header {
   height: 90px;
   display: flex;
   justify-content: space-between;
-  background-color: grey;
+  background-color: black;
   color: #fff;
   position: fixed;
   z-index: 1;
@@ -137,7 +142,7 @@ header {
 }
 
 .nav-desktop a:hover {
-  border-top: black solid 0.5px;
+  border-top: lightGrey solid 0.5px;
   padding-top: 0.2rem;
   color: black;
   transition: all 300ms linear;
@@ -178,10 +183,6 @@ h2 {
 
 .gallery img {
   max-width: 450px;
-}
-
-.thailand {
-  background-color: lightGrey;
 }
 
 /* Added target-thailand and un-used h6 to fix anchor target, to make heading visible without adding extra top padding */
@@ -228,7 +229,6 @@ h6 {
 }
 
 .mauritius {
-  background-color: grey;
   padding-bottom: 3rem;
 }
 
@@ -247,7 +247,6 @@ h6 {
 .grid {
   display: grid;
   grid-template-columns: 100px 100px 100px 100px 100px;
-  background-color: black;
   justify-content: center;
   margin: 2rem;
 }
@@ -267,22 +266,17 @@ h6 {
   transition: all 200ms ease-in;
 }
 
-.sri-lanka h2,
-.sri-lanka p {
-  color: lightGrey;
-}
-
 /* Footer */
 
 footer {
   position: relative;
   top: 6rem;
-  background-color: lightGrey;
   height: 150px;
   font-family: "Orbitron", sans-serif;
   letter-spacing: 0.2rem;
   display: flex;
   justify-content: center;
+  color: #fff;
 }
 
 footer img {
