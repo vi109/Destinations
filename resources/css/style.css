@@ -144,7 +144,7 @@ header {
 .nav-desktop a:hover {
   border-top: lightGrey solid 0.5px;
   padding-top: 0.2rem;
-  color: black;
+  color: lightGrey;
   transition: all 300ms linear;
 }
 
