@@ -263,7 +263,7 @@ h6 {
 
 .grid img:hover {
   transform: scale(2);
-  transition: all 200ms ease-in;
+  transition: all 201ms ease-in;
 }
 
 /* Footer */
